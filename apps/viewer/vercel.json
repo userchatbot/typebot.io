@@ -1,4 +1,5 @@
 {
+  "maxDuration": 10
   "github": {
     "silent": true
   }
