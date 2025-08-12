@@ -5,10 +5,9 @@
     "dev": "dotenv -e ./.env -e ../../.env -- next dev -p 3000",
     "build": "dotenv -e ./.env -e ../../.env -- next build",
     "start": "dotenv -e ./.env -e ../../.env -- next start",
-    "test": "dotenv -e ./.env -e ../../.env -- playwright test",
-    "test:show-report": "playwright show-report src/test/reporters",
-    "test:ui": "dotenv -e ./.env -e ../../.env -- playwright test --ui",
-    "test:unit": "vitest run"
+    "test": "dotenv -e ./.env -e ../../.env -- vitest run",
+    "test:e2e": "dotenv -e ./.env -e ../../.env -- playwright test",
+    "test:e2e:show-report": "playwright show-report src/test/reporters"
   },
   "dependencies": {
     "@ark-ui/react": "5.7.0",
@@ -79,8 +78,7 @@
     "dequal": "2.0.3",
     "emojilib": "3.0.10",
     "framer-motion": "11.1.7",
-    "google-auth-library": "9.15.1",
-    "google-spreadsheet": "4.1.4",
+    "google-auth-library": "10.1.0",
     "immer": "10.0.2",
     "ioredis": "5.4.1",
     "jsonwebtoken": "9.0.1",
@@ -149,6 +147,6 @@
     "superjson": "1.12.4",
     "tailwindcss": "3.4.17",
     "vite-tsconfig-paths": "5.1.4",
-    "vitest": "3.1.4"
+    "vitest": "3.2.4"
   }
 }
